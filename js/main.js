@@ -1,6 +1,6 @@
 function search(){
     fetch("https://api.thecatapi.com/v1/images/search")
-    .then(date=>data.json())
+    .then(data=>data.json())
     .then(json=>{
         document.getElementById("content").src=json[0].url
     })
